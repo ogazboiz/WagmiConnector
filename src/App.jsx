@@ -61,7 +61,7 @@ function App() {
 
       <div className="w-full max-w-md">
         {isConnected ? (
-          <div className="space-y-6">
+          <div className="space-y-6 border border-gray-300 rounded-xl p-4  bg-gray-50 shadow-lg">
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-200 bg-gray-50">
                 <Wallet className="h-4 w-4 text-gray-500" />
