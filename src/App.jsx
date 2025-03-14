@@ -148,7 +148,7 @@ function App() {
               ))}
             </div>
             <footer className="mt-6 text-center text-gray-500 text-sm">
-              Made by Ogazboiz
+              Made by <span className="font-semibold text-blue-600">Ogazboiz</span>
             </footer>
           </div>
         </div>
