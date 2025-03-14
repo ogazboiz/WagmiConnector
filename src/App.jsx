@@ -4,7 +4,7 @@ import "./App.css"
 import { useAccount, useConnectors, useConnect, useDisconnect, useSwitchChain } from "wagmi"
 import { mainnet, sepolia, polygon, base } from "wagmi/chains"
 import { reconnect } from "@wagmi/core"
-import { UserPlus, LogOut, ChevronRight, X, Wallet,PaintBucket  } from "lucide-react"
+import { UserPlus, LogOut, ChevronRight, X, Wallet,PaintBucket, WalletMinimal  } from "lucide-react"
 
 
 function App() {
@@ -137,7 +137,7 @@ function App() {
                     {connector.id === "io.metamask" && <span className="text-lg">🦊</span>}
                     {connector.id === "app.phantom" && <span className="text-lg">👻</span>}
                     {connector.id === "coinbaseWallet" && <span className="text-lg">📱</span>}
-                    {connector.id === "walletConnect" && <span className="text-lg">🔗</span>}
+                    {connector.id === "walletConnect" && <span className="text-lg"><WalletMinimal  className="text-blue-500"/></span>}
                     {!["metaMask", "coinbaseWallet", "walletConnect"].includes(connector.id) && (
                       <Wallet className="h-4 w-4" />
                     )}
