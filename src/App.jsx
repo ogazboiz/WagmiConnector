@@ -73,7 +73,7 @@ function App() {
 
               <button
                 onClick={handleDisconnect}
-                className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-200 hover:bg-gray-50 transition text-red-500 hover:bg-red-50"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-200 transition text-red-500 hover:bg-red-50"
               >
                 <LogOut className="h-4 w-4" />
                 Disconnect
