@@ -1,8 +1,8 @@
 import { http, createConfig } from "wagmi";
-import { mainnet, sepolia } from "wagmi/chains";
+import { mainnet, polygon, sepolia, base } from "wagmi/chains";
 import { walletConnect } from "wagmi/connectors";
 export const config = createConfig({
-  chains: [mainnet, sepolia],
+  chains: [mainnet, sepolia,polygon, base],
   connectors: [
     walletConnect({
       projectId: import.meta.env.VITE_PROVIDER,
@@ -12,5 +12,7 @@ export const config = createConfig({
   transports: {
     [mainnet.id]: http(),
     [sepolia.id]: http(),
+    [polygon.id]: http(),
+    [base.id]: http(),
   },
 });
