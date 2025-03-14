@@ -4,7 +4,8 @@ import "./App.css"
 import { useAccount, useConnectors, useConnect, useDisconnect, useSwitchChain } from "wagmi"
 import { mainnet, sepolia, polygon, base } from "wagmi/chains"
 import { reconnect } from "@wagmi/core"
-import { UserPlus, LogOut, ChevronRight, X, Wallet } from "lucide-react"
+import { UserPlus, LogOut, ChevronRight, X, Wallet,PaintBucket  } from "lucide-react"
+
 
 function App() {
   const { address, chain, isConnected, connector } = useAccount()
@@ -55,6 +56,7 @@ function App() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-white p-6 text-center">
       <header className="mb-8">
         <h1 className="text-xl font-semibold text-gray-800">Wallet Connect</h1>
+        <h3 className="flex justify-center items-center gap-1">ogazboizKit <PaintBucket className="h-5 w-5 text-blue-500" />      </h3> 
       </header>
 
       <div className="w-full max-w-md">
