@@ -133,7 +133,8 @@ function App() {
                   className="flex items-center gap-3 w-full px-5 py-3 rounded-lg border border-gray-200 hover:bg-gray-50 transition text-left"
                 >
                   <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-                    {connector.id === "metaMask" && <span className="text-lg">🦊</span>}
+                    {connector.id === "io.metamask" && <span className="text-lg">🦊</span>}
+                    {connector.id === "app.phantom" && <span className="text-lg">👻</span>}
                     {connector.id === "coinbaseWallet" && <span className="text-lg">📱</span>}
                     {connector.id === "walletConnect" && <span className="text-lg">🔗</span>}
                     {!["metaMask", "coinbaseWallet", "walletConnect"].includes(connector.id) && (
@@ -147,6 +148,9 @@ function App() {
                 </button>
               ))}
             </div>
+            <footer className="mt-6 text-center text-gray-500 text-sm">
+              Made by Ogazboiz
+            </footer>
           </div>
         </div>
       )}
